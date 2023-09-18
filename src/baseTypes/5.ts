@@ -4,7 +4,7 @@
 */
 
 let union: string | number;
-union = "hello wirld";
+union = "hello world";
 union = 7;
 
 let literal: "enable" | "disable";
