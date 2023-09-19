@@ -5,22 +5,9 @@
    щоб вона повертала правильний тип.
 */
 
-// function getPromise () {
-//   return new Promise((resolve) => {
-//     resolve(['Text', 50]);
-//   });
-// }
-
-// getPromise()
-// .then((data) => {
-//   console.log(data);
-// });
-
-// export { };
-
 function getPromise<T>() {
   return new Promise((resolve) => {
-    resolve(["Text", 50] as T);
+    resolve(["Text", 50]);
   });
 }
 
