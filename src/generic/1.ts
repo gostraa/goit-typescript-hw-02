@@ -19,12 +19,12 @@
 // export { };
 
 function getPromise<T>() {
-  return new Promise<T>((resolve) => {
+  return new Promise((resolve) => {
     resolve(["Text", 50] as T);
   });
 }
 
-getPromise<[string, number]>().then((data) => {
+getPromise().then((data) => {
   console.log(data);
 });
 

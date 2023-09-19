@@ -10,7 +10,7 @@ class Component<T extends Properties> {
 }
 
 class Page extends Component<Properties> {
-  pageInfo() {
+  pageInfo(): void {
     console.log(this.props.title);
   }
 }
