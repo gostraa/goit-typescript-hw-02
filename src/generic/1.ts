@@ -5,8 +5,8 @@
    щоб вона повертала правильний тип.
 */
 
-function getPromise<T>() {
-  return new Promise((resolve) => {
+function getPromise(): Promise<Array<string | number>> {
+  return new Promise<(string | number)[]>((resolve) => {
     resolve(["Text", 50]);
   });
 }
